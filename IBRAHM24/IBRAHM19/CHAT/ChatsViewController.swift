@@ -122,7 +122,9 @@ extension ChatsViewController {
     func AddChatViewControllerButton() {
         let vc = AddChatViewController()
         vc.title = "Новый чат"
-        navigationController?.pushViewController(vc, animated: true)
+        vc.delegate = self
+        present(vc, animated: true)
+//        navigationController?.pushViewController(vc, animated: true)
     }
     
     @objc
@@ -163,4 +165,15 @@ extension ChatsViewController {
     }
 }
 
-
+extension ChatsViewController: NewChatViewControllerDelegate {
+    
+    func newChatSendMessageButtonTapped(avatar: UIImage?, username: String, message: String) {
+        let indexPath = IndexPath(row: chatItems.count, section: 0)
+        
+        let newItem = ChatItem(avatar: avatar, username: username, lastMessage: message)
+        
+        chatItems.append(newItem)
+        
+        tableView.insertRows(at: [indexPath], with: .automatic)
+    }
+}
