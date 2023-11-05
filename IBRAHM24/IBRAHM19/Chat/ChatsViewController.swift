@@ -39,13 +39,13 @@ final class ChatsViewController: UIViewController {
             title: "Удалить",
             style: .plain,
             target: self,
-            action: #selector(DeleteChatsViewControllerButton)
+            action: #selector(deleteChatsViewControllerButton)
         )
         
         navigationItem.rightBarButtonItem = UIBarButtonItem(
             barButtonSystemItem: .add,
             target: self,
-            action: #selector(AddChatViewControllerButton)
+            action: #selector(addChatViewControllerButton)
         )
 
         tableView.dataSource = self
@@ -119,7 +119,7 @@ extension ChatsViewController {
     }
     
     @objc
-    func AddChatViewControllerButton() {
+    func addChatViewControllerButton() {
         let vc = AddChatViewController()
         vc.title = "Новый чат"
         vc.delegate = self
@@ -128,11 +128,11 @@ extension ChatsViewController {
     }
     
     @objc
-    func DeleteChatsViewControllerButton() {
+    func deleteChatsViewControllerButton() {
         let alert = UIAlertController(title: "Вы уверены?", message: "Удаленные чаты нельзя будет восстановить", preferredStyle: .alert)
         
         let confirm = UIAlertAction(title: "Да", style: .destructive) { [weak self] _ in
-            guard let self = self else {return}
+            guard let self = self else { return }
             
             self.chatItems = []
             self.tableView.reloadData()
@@ -150,7 +150,7 @@ extension ChatsViewController {
         let alert = UIAlertController(title: "Вы уверены?", message: "Удаленный чат нельзя будет восстановить", preferredStyle: .alert)
         
         let confirm = UIAlertAction(title: "Да", style: .destructive) { [weak self] _ in
-            guard let self = self else {return}
+            guard let self = self else { return }
             
             self.chatItems.remove(at: indexPath.row)
             self.tableView.deleteRows(at: [indexPath], with: .none)
@@ -164,6 +164,8 @@ extension ChatsViewController {
         present(alert, animated: true)
     }
 }
+
+// MARK: - NewChatViewControllerDelegate
 
 extension ChatsViewController: NewChatViewControllerDelegate {
     

@@ -88,10 +88,10 @@
 		CF1910112AB367BE0022C942 /* IBRAHM19 */ = {
 			isa = PBXGroup;
 			children = (
-				CF5165152AC99F1C00D67306 /* STATUS */,
-				CF51650B2AC7354F00D67306 /* CALLS */,
-				CF1910312AB505A70022C942 /* PROFILE */,
-				CF19102C2AB498600022C942 /* CHAT */,
+				CF5165152AC99F1C00D67306 /* Status */,
+				CF51650B2AC7354F00D67306 /* Calls */,
+				CF1910312AB505A70022C942 /* Profile */,
+				CF19102C2AB498600022C942 /* Chat */,
 				CF1910122AB367BE0022C942 /* AppDelegate.swift */,
 				CF1910142AB367BE0022C942 /* SceneDelegate.swift */,
 				CF1910262AB383430022C942 /* MainTabBarController.swift */,
@@ -103,7 +103,7 @@
 			path = IBRAHM19;
 			sourceTree = "<group>";
 		};
-		CF19102C2AB498600022C942 /* CHAT */ = {
+		CF19102C2AB498600022C942 /* Chat */ = {
 			isa = PBXGroup;
 			children = (
 				CF1910362AB879480022C942 /* ChatsViewController.swift */,
@@ -112,19 +112,19 @@
 				CF19102F2AB4FEBB0022C942 /* ChatInfoViewController.swift */,
 				CF5165032AC058CC00D67306 /* AddChatViewController.swift */,
 			);
-			path = CHAT;
+			path = Chat;
 			sourceTree = "<group>";
 		};
-		CF1910312AB505A70022C942 /* PROFILE */ = {
+		CF1910312AB505A70022C942 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
 				CF19102A2AB494A80022C942 /* ProfileViewController.swift */,
 				CF1910322AB73F780022C942 /* ProfileInfoViewController.swift */,
 			);
-			path = PROFILE;
+			path = Profile;
 			sourceTree = "<group>";
 		};
-		CF51650B2AC7354F00D67306 /* CALLS */ = {
+		CF51650B2AC7354F00D67306 /* Calls */ = {
 			isa = PBXGroup;
 			children = (
 				CF51650D2AC7363000D67306 /* CallsListViewController.swift */,
@@ -132,27 +132,27 @@
 				CF5165112AC73D4F00D67306 /* CallItem.swift */,
 				CF5165132AC8152100D67306 /* CallInfoViewController.swift */,
 			);
-			path = CALLS;
+			path = Calls;
 			sourceTree = "<group>";
 		};
-		CF5165152AC99F1C00D67306 /* STATUS */ = {
+		CF5165152AC99F1C00D67306 /* Status */ = {
 			isa = PBXGroup;
 			children = (
-				CF8437302AD9552600D57F0F /* MODELS */,
+				CF8437302AD9552600D57F0F /* Models */,
 				CF84372E2AD936FF00D57F0F /* StatusViewController.swift */,
 				CF8437362AD9694600D57F0F /* MyStatusTableViewCell.swift */,
 				CF8437382AD9696600D57F0F /* StatusTableViewCell.swift */,
 			);
-			path = STATUS;
+			path = Status;
 			sourceTree = "<group>";
 		};
-		CF8437302AD9552600D57F0F /* MODELS */ = {
+		CF8437302AD9552600D57F0F /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				CF8437322AD9554D00D57F0F /* Status.swift */,
 				CF8437342AD9556300D57F0F /* Section.swift */,
 			);
-			path = MODELS;
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -383,6 +383,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JVQ222WBQ7;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = IBRAHM19/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -413,6 +414,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JVQ222WBQ7;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = IBRAHM19/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
